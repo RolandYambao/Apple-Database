@@ -523,8 +523,8 @@ iphones.update({
     where: {
         color: 'Midnight'
     }
-}).then(function (numRowsChanged) {
-    console.log('UPDATED IPHONE COLOR', numRowsChanged)
+}).then(function (iphoneChanged) {
+    console.log('UPDATED IPHONE COLOR', iphoneChanged)
 });
 iphones.update({
     color: 'White'
@@ -532,8 +532,8 @@ iphones.update({
     where: {
         color: 'Starlight'
     }
-}).then(function (numRowsChanged) {
-    console.log('UPDATED IPHONE COLOR AGAIN', numRowsChanged)
+}).then(function (iphoneChanged) {
+    console.log('UPDATED IPHONE COLOR AGAIN', iphoneChanged)
 });
 // update MacBooks
 macbooks.update({
@@ -542,8 +542,8 @@ macbooks.update({
     where: {
         speed: 'Scary Fast'
     }
-}).then(function (numRowsChanged) {
-    console.log('UPDATED MACBOOK SPEED', numRowsChanged)
+}).then(function (macbookChanged) {
+    console.log('UPDATED MACBOOK SPEED', macbookChanged)
 });
 macbooks.update({
     speed: 'Reasonably Quicker'
@@ -551,8 +551,8 @@ macbooks.update({
     where: {
         speed: 'Scary Faster'
     }
-}).then(function (numRowsChanged) {
-    console.log('UPDATED MACBOOK SPEED AGAIN', numRowsChanged)
+}).then(function (macbookChanged) {
+    console.log('UPDATED MACBOOK SPEED AGAIN', macbookChanged)
 });
 // update AirPods
 airpods.update({
@@ -561,8 +561,8 @@ airpods.update({
     where: {
         model: 'AirPods Max (White)'
     }
-}).then(function (numRowsChanged) {
-    console.log('UPDATED AIRPODS MODEL', numRowsChanged)
+}).then(function (airpodsChanged) {
+    console.log('UPDATED AIRPODS MODEL', airpodsChanged)
 });
 airpods.update({
     model: 'AirPods Max (Midnight)'
@@ -570,8 +570,42 @@ airpods.update({
     where: {
         model: 'AirPods Max (Black)'
     }
-}).then(function (numRowsChanged) {
-    console.log('UPDATED AIRPODS MODEL AGAIN', numRowsChanged)
+}).then(function (airpodsChanged) {
+    console.log('UPDATED AIRPODS MODEL AGAIN', airpodsChanged)
 });
 /************************************************************/
 // [D]elete
+// destroy iPhone
+iphones.destroy({
+    where: {
+        model: 'iPhone 13',
+        color: 'Pink',
+        size: '6.1"',
+        life: 19,
+    }
+}).then(function (iphoneDeleted) {
+    console.log('DELETED IPHONE', iphoneDeleted)
+});
+// destroy MacBook
+macbooks.destroy({
+    where: {
+        model: 'M1 PRO (2021)',
+        size: 14,
+        speed: 'Scary Fast',
+        life: 17,
+    }
+}).then(function (macbookDeleted) {
+    console.log('DELETED MACBOOK', macbookDeleted)
+});
+// destroy AirPods
+airpods.destroy({
+    where: {
+        model: 'AirPods (2nd Generation) (No Case)',
+        resistant: false,
+        charge: 'Lightning Charging',
+        life: 5,
+    }
+}).then(function (airpodsDeleted) {
+    console.log('DELETED AIRPODS', airpodsDeleted)
+});
+/************************************************************/
