@@ -495,7 +495,7 @@ airpods.findOne({
     console.log('FOUND RESISTANT AIRPOD', foundAirpods)
 });
 airpods.findOne({
-    where: { name: 'AirPods Max (Red)' }
+    where: { model: 'AirPods Max (Red)' }
 }).then(function (foundAirpods) {
     console.log('FOUND RED AIRPODS MAX', foundAirpods)
 });
