@@ -16,15 +16,15 @@ module.exports = (sequelize, DataTypes) => {
   iphones.init({
     model: {
       type: DataTypes.STRING,
-      validate: { isString: true }
+      validate: { notNull: true }
     },
     color: {
       type: DataTypes.STRING,
-      validate: { isString: true }
+      validate: { notNull: true }
     },
     size: {
       type: DataTypes.STRING,
-      validate: { isString: true }
+      validate: { notNull: true }
     },
     life: {
       type: DataTypes.INTEGER,

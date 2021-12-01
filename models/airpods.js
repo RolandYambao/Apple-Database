@@ -14,10 +14,22 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   airpods.init({
-    model: DataTypes.STRING,
-    resistant: DataTypes.BOOLEAN,
-    charge: DataTypes.STRING,
-    life: DataTypes.INTEGER
+    model: {
+      type: DataTypes.STRING,
+      validate: { notNull: true }
+    },
+    resistant: {
+      type: DataTypes.BOOLEAN,
+      validate: { notNull: true }
+    },
+    charge: {
+      type: DataTypes.STRING,
+      validate: { notNull: true }
+    },
+    life: {
+      type: DataTypes.INTEGER,
+      validate: { isInt: true }
+    },
   }, {
     sequelize,
     modelName: 'airpods',
