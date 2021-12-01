@@ -14,10 +14,22 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   iphones.init({
-    model: DataTypes.STRING,
-    color: DataTypes.STRING,
-    size: DataTypes.STRING,
-    life: DataTypes.INTEGER
+    model: {
+      type: DataTypes.STRING,
+      validate: { isString: true }
+    },
+    color: {
+      type: DataTypes.STRING,
+      validate: { isString: true }
+    },
+    size: {
+      type: DataTypes.STRING,
+      validate: { isString: true }
+    },
+    life: {
+      type: DataTypes.INTEGER,
+      validate: { isInt: true }
+    },
   }, {
     sequelize,
     modelName: 'iphones',
