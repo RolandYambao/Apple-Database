@@ -589,10 +589,10 @@ iphones.destroy({
 // destroy MacBook
 macbooks.destroy({
     where: {
-        model: 'M1 PRO (2021)',
-        size: 14,
-        speed: 'Scary Fast',
-        life: 17,
+        model: 'MacBook Pro (2018)',
+        size: 15,
+        speed: 'Fast',
+        life: 10,
     }
 }).then(function (macbookDeleted) {
     console.log('DELETED MACBOOK', macbookDeleted)
