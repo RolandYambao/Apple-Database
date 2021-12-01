@@ -1,3 +1,271 @@
 const { iphones } = require('./models');
 const { macbooks } = require('./models');
 const { airpods } = require('./models');
+
+// Implement CRUD
+
+/************************************************************/
+// [C]reate
+// iPhones 1
+iphones.create({
+    model: 'iPhone 13',
+    color: 'Pink',
+    size: '6.1"',
+    life: 19,
+})
+    .then(function (createdIphone) {
+        console.log('1st iPhone', createdIphone);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new iPhone', error);
+    });
+// iPhones 2
+iphones.create({
+    model: 'iPhone 13',
+    color: 'Blue',
+    size: '6.1"',
+    life: 19,
+})
+    .then(function (createdIphone) {
+        console.log('2nd iPhone', createdIphone);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new iPhone', error);
+    });
+// iPhones 3
+iphones.create({
+    model: 'iPhone 13',
+    color: 'Midnight',
+    size: '6.1"',
+    life: 19,
+})
+    .then(function (createdIphone) {
+        console.log('3rd iPhone', createdIphone);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new iPhone', error);
+    });
+// iPhones 4
+iphones.create({
+    model: 'iPhone 13',
+    color: 'Starlight',
+    size: '6.1"',
+    life: 19,
+})
+    .then(function (createdIphone) {
+        console.log('4th iPhone', createdIphone);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new iPhone', error);
+    });
+// iPhones 5
+iphones.create({
+    model: 'iPhone 13',
+    color: 'Red',
+    size: '6.1"',
+    life: 19,
+})
+    .then(function (createdIphone) {
+        console.log('5th iPhone', createdIphone);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new iPhone', error);
+    });
+// iPhones 6
+iphones.create({
+    model: 'iPhone 13',
+    color: 'Pink',
+    size: '5.4"',
+    life: 19,
+})
+    .then(function (createdIphone) {
+        console.log('6th iPhone', createdIphone);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new iPhone', error);
+    });
+// iPhones 7
+iphones.create({
+    model: 'iPhone 13',
+    color: 'Blue',
+    size: '5.4"',
+    life: 19,
+})
+    .then(function (createdIphone) {
+        console.log('7th iPhone', createdIphone);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new iPhone', error);
+    });
+// iPhones 8
+iphones.create({
+    model: 'iPhone 13',
+    color: 'Midnight',
+    size: '5.4"',
+    life: 19,
+})
+    .then(function (createdIphone) {
+        console.log('8th iPhone', createdIphone);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new iPhone', error);
+    });
+// iPhones 9
+iphones.create({
+    model: 'iPhone 13',
+    color: 'Starlight',
+    size: '5.4"',
+    life: 19,
+})
+    .then(function (createdIphone) {
+        console.log('9th iPhone', createdIphone);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new iPhone', error);
+    });
+// iPhones 10
+iphones.create({
+    model: 'iPhone 13',
+    color: 'Red',
+    size: '5.4"',
+    life: 19,
+})
+    .then(function (createdIphone) {
+        console.log('10th iPhone', createdIphone);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new iPhone', error);
+    });
+/************************************************************/
+// MacBooks 1
+macbooks.create({
+    model: 'M1 PRO (2021)',
+    size: 14,
+    speed: 'Scary Fast',
+    life: 17,
+})
+    .then(function (createdMacBook) {
+        console.log('1st Macbook', createdMacBook);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new MacBook', error);
+    });
+// MacBooks 2
+macbooks.create({
+    model: 'M1 PRO (2021)',
+    size: 16,
+    speed: 'Scary Fast',
+    life: 21,
+})
+    .then(function (createdMacBook) {
+        console.log('2nd Macbook', createdMacBook);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new MacBook', error);
+    });
+// MacBooks 3
+macbooks.create({
+    model: 'M1 MAX (2021)',
+    size: 14,
+    speed: 'Scary Faster',
+    life: 17,
+})
+    .then(function (createdMacBook) {
+        console.log('3rd Macbook', createdMacBook);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new MacBook', error);
+    });
+// MacBooks 4
+macbooks.create({
+    model: 'M1 MAX (2021)',
+    size: 16,
+    speed: 'Scary Faster',
+    life: 21,
+})
+    .then(function (createdMacBook) {
+        console.log('4th Macbook', createdMacBook);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new MacBook', error);
+    });
+// MacBooks 5
+macbooks.create({
+    model: 'M1 PRO (2020)',
+    size: 13,
+    speed: 'Fast',
+    life: 20,
+})
+    .then(function (createdMacBook) {
+        console.log('5th Macbook', createdMacBook);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new MacBook', error);
+    });
+// MacBooks 6
+macbooks.create({
+    model: 'MacBook Pro (2020)',
+    size: 13,
+    speed: 'Fast',
+    life: 10,
+})
+    .then(function (createdMacBook) {
+        console.log('6th Macbook', createdMacBook);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new MacBook', error);
+    });
+// MacBooks 7
+macbooks.create({
+    model: 'MacBook Pro (2019)',
+    size: 16,
+    speed: 'Fast',
+    life: 11,
+})
+    .then(function (createdMacBook) {
+        console.log('7th Macbook', createdMacBook);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new MacBook', error);
+    });
+// MacBooks 8
+macbooks.create({
+    model: 'MacBook Pro (2019)',
+    size: 13,
+    speed: 'Fast',
+    life: 10,
+})
+    .then(function (createdMacBook) {
+        console.log('8th Macbook', createdMacBook);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new MacBook', error);
+    });
+// MacBooks 9
+macbooks.create({
+    model: 'MacBook Pro (2019)',
+    size: 15,
+    speed: 'Fast',
+    life: 10,
+})
+    .then(function (createdMacBook) {
+        console.log('9th Macbook', createdMacBook);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new MacBook', error);
+    });
+// MacBooks 10
+macbooks.create({
+    model: 'MacBook Pro (2018)',
+    size: 15,
+    speed: 'Fast',
+    life: 10,
+})
+    .then(function (createdMacBook) {
+        console.log('10th Macbook', createdMacBook);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new MacBook', error);
+    });
+/************************************************************/
+// AirPods 1
