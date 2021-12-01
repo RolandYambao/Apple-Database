@@ -515,4 +515,42 @@ airpods.findByPk(24)
         console.log('FOUND AIRPODS PK ', airpodsPk);
     })
 /************************************************************/
-// [U]pdated
+// [U]pdate
+// update iPhones
+iphones.update({
+    color: 'Dark Grey'
+}, {
+    where: {
+        color: 'Midnight'
+    }
+}).then(function (numRowsChanged) {
+    console.log('UDPATED IPHONE COLOR', numRowsChanged)
+});
+iphones.update({
+    color: 'White'
+}, {
+    where: {
+        color: 'Starlight'
+    }
+}).then(function (numRowsChanged) {
+    console.log('UDPATED IPHONE COLOR AGAIN', numRowsChanged)
+});
+// update MacBooks
+macbooks.update({
+    speed: 'Reasonably Quick'
+}, {
+    where: {
+        speed: 'Scary Fast'
+    }
+}).then(function (numRowsChanged) {
+    console.log('UDPATED MACBOOK SPEED', numRowsChanged)
+});
+macbooks.update({
+    speed: 'Reasonably Quicker'
+}, {
+    where: {
+        speed: 'Scary Faster'
+    }
+}).then(function (numRowsChanged) {
+    console.log('UDPATED MACBOOK SPEED AGAIN', numRowsChanged)
+});
