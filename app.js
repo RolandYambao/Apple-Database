@@ -325,7 +325,7 @@ airpods.create({
     model: 'AirPods Pro (No Case)',
     resistant: true,
     charge: 'MagSafe, Wireless, and Lightning Charging',
-    life: 4.5,
+    life: 5,
 })
     .then(function (createdAirPod) {
         console.log('5th AirPod', createdAirPod);
