@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   macbooks.init({
     model: {
       type: DataTypes.STRING,
-      validate: { notNull: true }
+      validate: { notEmpty: true }
     },
     size: {
       type: DataTypes.INTEGER,
@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     speed: {
       type: DataTypes.STRING,
-      validate: { notNull: true }
+      validate: { notEmpty: true }
     },
     life: {
       type: DataTypes.INTEGER,

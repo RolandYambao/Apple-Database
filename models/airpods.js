@@ -16,15 +16,15 @@ module.exports = (sequelize, DataTypes) => {
   airpods.init({
     model: {
       type: DataTypes.STRING,
-      validate: { notNull: true }
+      validate: { notEmpty: true }
     },
     resistant: {
       type: DataTypes.BOOLEAN,
-      validate: { notNull: true }
+      validate: { allowNull: false }
     },
     charge: {
       type: DataTypes.STRING,
-      validate: { notNull: true }
+      validate: { notEmpty: true }
     },
     life: {
       type: DataTypes.INTEGER,
