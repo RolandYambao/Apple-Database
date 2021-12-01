@@ -451,7 +451,7 @@ airpods.findAll()
             }
         }
     })
-//findOne iPhone
+// findOne iPhone
 iphones.findOne({
     where: { color: 'Blue' }
 }).then(function (foundIphone) {
@@ -467,9 +467,52 @@ iphones.findOne({
 }).then(function (foundIphone) {
     console.log('FOUND MIDNIGHT IPHONE', foundIphone)
 });
-//findOne MacBooks
+// findOne MacBooks
 macbooks.findOne({
     where: { speed: 'Scary Fast' }
 }).then(function (foundMacbook) {
-    console.log('FOUND SCARY FAST MASCBOOK', foundMacbook)
+    console.log('FOUND SCARY FAST MACBOOK', foundMacbook)
 });
+macbooks.findOne({
+    where: { speed: 'Scary Faster' }
+}).then(function (foundMacbook) {
+    console.log('FOUND SCARY FASTER MACBOOK', foundMacbook)
+});
+macbooks.findOne({
+    where: { life: 17 }
+}).then(function (foundMacbook) {
+    console.log('FOUND 17 HOUR LIFE MACBOOK', foundMacbook)
+});
+// findOne AirPods
+airpods.findOne({
+    where: { life: 6 }
+}).then(function (foundAirpods) {
+    console.log('FOUND 6 HOUR LIFE AIRPOD', foundAirpods)
+});
+airpods.findOne({
+    where: { resistant: true }
+}).then(function (foundAirpods) {
+    console.log('FOUND RESISTANT AIRPOD', foundAirpods)
+});
+airpods.findOne({
+    where: { name: 'AirPods Max (Red)' }
+}).then(function (foundAirpods) {
+    console.log('FOUND RED AIRPODS MAX', foundAirpods)
+});
+// findByPk iPhone
+iphones.findByPk(1)
+    .then(function (iphonePk) {
+        console.log('FOUND IPHONE PK ', iphonePk);
+    })
+// findByPk MacBook
+macbooks.findByPk(17)
+    .then(function (macbookPk) {
+        console.log('FOUND MACBOOK PK ', macbookPk);
+    })
+// findByPk AirPods
+airpods.findByPk(24)
+    .then(function (airpodsPk) {
+        console.log('FOUND AIRPODS PK ', airpodsPk);
+    })
+/************************************************************/
+// [U]pdated
