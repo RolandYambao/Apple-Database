@@ -454,6 +454,22 @@ airpods.findAll()
 //findOne iPhone
 iphones.findOne({
     where: { color: 'Blue' }
-}).then(function (foundPlayer) {
-    console.log('FOUND BLUE IPHONE', foundPlayer)
+}).then(function (foundIphone) {
+    console.log('FOUND BLUE IPHONE', foundIphone)
+});
+iphones.findOne({
+    where: { color: 'Starlight' }
+}).then(function (foundIphone) {
+    console.log('FOUND STARLIGHT IPHONE', foundIphone)
+});
+iphones.findOne({
+    where: { color: 'Midnight' }
+}).then(function (foundIphone) {
+    console.log('FOUND MIDNIGHT IPHONE', foundIphone)
+});
+//findOne MacBooks
+macbooks.findOne({
+    where: { speed: 'Scary Fast' }
+}).then(function (foundMacbook) {
+    console.log('FOUND SCARY FAST MASCBOOK', foundMacbook)
 });
