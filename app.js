@@ -524,7 +524,7 @@ iphones.update({
         color: 'Midnight'
     }
 }).then(function (numRowsChanged) {
-    console.log('UDPATED IPHONE COLOR', numRowsChanged)
+    console.log('UPDATED IPHONE COLOR', numRowsChanged)
 });
 iphones.update({
     color: 'White'
@@ -533,7 +533,7 @@ iphones.update({
         color: 'Starlight'
     }
 }).then(function (numRowsChanged) {
-    console.log('UDPATED IPHONE COLOR AGAIN', numRowsChanged)
+    console.log('UPDATED IPHONE COLOR AGAIN', numRowsChanged)
 });
 // update MacBooks
 macbooks.update({
@@ -543,7 +543,7 @@ macbooks.update({
         speed: 'Scary Fast'
     }
 }).then(function (numRowsChanged) {
-    console.log('UDPATED MACBOOK SPEED', numRowsChanged)
+    console.log('UPDATED MACBOOK SPEED', numRowsChanged)
 });
 macbooks.update({
     speed: 'Reasonably Quicker'
@@ -552,5 +552,26 @@ macbooks.update({
         speed: 'Scary Faster'
     }
 }).then(function (numRowsChanged) {
-    console.log('UDPATED MACBOOK SPEED AGAIN', numRowsChanged)
+    console.log('UPDATED MACBOOK SPEED AGAIN', numRowsChanged)
 });
+// update AirPods
+airpods.update({
+    model: 'AirPods Max (Starlight)'
+}, {
+    where: {
+        model: 'AirPods Max (White)'
+    }
+}).then(function (numRowsChanged) {
+    console.log('UPDATED AIRPODS MODEL', numRowsChanged)
+});
+airpods.update({
+    model: 'AirPods Max (Midnight)'
+}, {
+    where: {
+        model: 'AirPods Max (Black)'
+    }
+}).then(function (numRowsChanged) {
+    console.log('UPDATED AIRPODS MODEL AGAIN', numRowsChanged)
+});
+/************************************************************/
+// [D]elete
