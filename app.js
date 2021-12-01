@@ -269,3 +269,132 @@ macbooks.create({
     });
 /************************************************************/
 // AirPods 1
+airpods.create({
+    model: 'AirPods (2nd Generation) (No Case)',
+    resistant: false,
+    charge: 'Lightning Charging',
+    life: 5,
+})
+    .then(function (createdAirPod) {
+        console.log('1st AirPod', createdAirPod);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new AirPod', error);
+    });
+// AirPods 2
+airpods.create({
+    model: 'AirPods (2nd Generation) (In Case)',
+    resistant: false,
+    charge: 'Lightning Charging',
+    life: 24,
+})
+    .then(function (createdAirPod) {
+        console.log('2nd AirPod', createdAirPod);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new AirPod', error);
+    });
+// AirPods 3
+airpods.create({
+    model: 'AirPods (3rd Generation) (No Case)',
+    resistant: true,
+    charge: 'MagSafe, Wireless, and Lightning Charging',
+    life: 6,
+})
+    .then(function (createdAirPod) {
+        console.log('3rd AirPod', createdAirPod);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new AirPod', error);
+    });
+// AirPods 4
+airpods.create({
+    model: 'AirPods (3rd Generation) (In Case)',
+    resistant: true,
+    charge: 'MagSafe, Wireless, and Lightning Charging',
+    life: 30,
+})
+    .then(function (createdAirPod) {
+        console.log('4th AirPod', createdAirPod);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new AirPod', error);
+    });
+// AirPods 5
+airpods.create({
+    model: 'AirPods Pro (No Case)',
+    resistant: true,
+    charge: 'MagSafe, Wireless, and Lightning Charging',
+    life: 4.5,
+})
+    .then(function (createdAirPod) {
+        console.log('5th AirPod', createdAirPod);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new AirPod', error);
+    });
+// AirPods 6
+airpods.create({
+    model: 'AirPods Pro (In Case)',
+    resistant: true,
+    charge: 'MagSafe, Wireless, and Lightning Charging',
+    life: 24,
+})
+    .then(function (createdAirPod) {
+        console.log('6th AirPod', createdAirPod);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new AirPod', error);
+    });
+// AirPods 7
+airpods.create({
+    model: 'AirPods Max (White)',
+    resistant: false,
+    charge: 'Lightning Charging',
+    life: 20,
+})
+    .then(function (createdAirPod) {
+        console.log('7th AirPod', createdAirPod);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new AirPod', error);
+    });
+// AirPods 8
+airpods.create({
+    model: 'AirPods Max (Black)',
+    resistant: false,
+    charge: 'Lightning Charging',
+    life: 20,
+})
+    .then(function (createdAirPod) {
+        console.log('8th AirPod', createdAirPod);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new AirPod', error);
+    });
+// AirPods 9
+airpods.create({
+    model: 'AirPods Max (Blue)',
+    resistant: false,
+    charge: 'Lightning Charging',
+    life: 20,
+})
+    .then(function (createdAirPod) {
+        console.log('9th AirPod', createdAirPod);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new AirPod', error);
+    });
+// AirPods 10
+airpods.create({
+    model: 'AirPods Max (Red)',
+    resistant: false,
+    charge: 'Lightning Charging',
+    life: 20,
+})
+    .then(function (createdAirPod) {
+        console.log('10th AirPod', createdAirPod);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new AirPod', error);
+    });
