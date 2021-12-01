@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     resistant: {
       type: DataTypes.BOOLEAN,
-      validate: { allowNull: false }
+      validate: { isIn: [[true, false]] }
     },
     charge: {
       type: DataTypes.STRING,
