@@ -398,3 +398,62 @@ airpods.create({
     .catch(function (err) {
         console.log('ERROR with adding new AirPod', error);
     });
+/************************************************************/
+// [R]ead
+// findAll iPhones
+iphones.findAll()
+    .then(function (iphonesArray) {
+        console.log('ALL IPHONES HERE')
+        for (let i = 0; i < iphonesArray; i++) {
+            console.log(iphonesArray[i])
+        }
+    })
+iphones.findAll()
+    .then(function (iphonesArray) {
+        console.log('ALL RED IPHONES HERE')
+        for (let i = 0; i < iphonesArray; i++) {
+            if (iphonesArray[i].color == 'Red') {
+                console.log(iphonesArray[i])
+            }
+        }
+    })
+// findAll MacBooks
+macbooks.findAll()
+    .then(function (macbooksArray) {
+        console.log('ALL MACBOOKS HERE')
+        for (let i = 0; i < macbooksArray; i++) {
+            console.log(macbooksArray[i])
+        }
+    })
+macbooks.findAll()
+    .then(function (macbooksArray) {
+        console.log('ALL 13 INCH MACBOOKS HERE')
+        for (let i = 0; i < macbooksArray; i++) {
+            if (macbooksArray[i].size == 13) {
+                console.log(macbooksArray[i])
+            }
+        }
+    })
+// findAll AirPods
+airpods.findAll()
+    .then(function (airpodsArray) {
+        console.log('ALL AIRPODS HERE')
+        for (let i = 0; i < airpodsArray; i++) {
+            console.log(airpodsArray[i])
+        }
+    })
+airpods.findAll()
+    .then(function (airpodsArray) {
+        console.log('ALL NON-RESISTANT AIRPODS HERE')
+        for (let i = 0; i < airpodsArray; i++) {
+            if (airpodsArray[i].resistant == false) {
+                console.log(airpodsArray[i])
+            }
+        }
+    })
+//findOne iPhone
+iphones.findOne({
+    where: { color: 'Blue' }
+}).then(function (foundPlayer) {
+    console.log('FOUND BLUE IPHONE', foundPlayer)
+});
